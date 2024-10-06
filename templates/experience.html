@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Experiencia Laboral</title>
+</head>
+<body>
+    <h1>Agregar Experiencia Laboral</h1>
+    <form method="POST" action="{{ url_for('experience') }}">
+        <label for="titulo">Título del trabajo:</label>
+        <input type="text" name="titulo" required><br>
+
+        <label for="empresa">Empresa:</label>
+        <input type="text" name="empresa" required><br>
+
+        <label for="ubicacion">Ubicación:</label>
+        <input type="text" name="ubicacion"><br>
+
+        <label for="fecha_inicio">Fecha de inicio:</label>
+        <input type="text" name="fecha_inicio" placeholder="dd/mm/aaaa" required><br>
+
+        <label for="fecha_fin">Fecha de fin:</label>
+        <input type="text" name="fecha_fin" placeholder="dd/mm/aaaa"><br>
+
+        <input type="submit" value="Agregar">
+    </form>
+</body>
+</html>
